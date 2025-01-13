@@ -25,7 +25,7 @@ def predict():
 
             # Make prediction
             prediction = model.predict(input_data)
-            result = "Will Purchase" if prediction[0] == 1 else "Will Not Purchase"
+            result = "The Customer will purchase a car" if prediction[0] == 1 else "The Customer will not purchase a car"
 
         except Exception as e:
             result = f"Error: {e}"
